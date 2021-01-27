@@ -13,6 +13,6 @@ cat file.txt | while read LINE; do
   DATE_END=$(date --date="${END}" +%s)
   
   if [ ${DATE_START} -gt ${DATE_END} ]; then
-	echo "Invalid record, fistarting date cannot be bigger ending date - ${LINE}"
+	echo "Invalid record, starting date cannot be bigger ending date - ${LINE}"
   fi	
 done
